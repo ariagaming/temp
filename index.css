@@ -9,10 +9,104 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
+  position: absolute;
+  font-size: 16px;
 }
 
 #content {
   font-size: 24px;
   color: pink;
   font-weight: bold;
+}
+
+.left,
+.right {
+  width: 50%;
+  position: absolute;
+  height: 100%;
+}
+
+.left {
+  left: 0;
+  background: rgb(248, 228, 190);
+}
+
+.right {
+  right: 0;
+  background: rgb(214, 220, 255);
+}
+
+.big-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  text-decoration: none;
+  border: 0px solid pink;
+  padding: 4rem 6rem;
+  border-radius: 1rem;
+
+  text-transform: uppercase;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.big-button:hover {
+  border: 12px solid pink;
+}
+
+.found {
+  background: rgb(0, 0, 97);
+  color: white;
+}
+.link {
+  background: rgb(87, 12, 64);
+  color: white;
+}
+
+/* PAGES */
+.page--sign-up,
+.page--link {
+  background: rgb(248, 228, 190);
+  padding: 1rem;
+}
+.page--sign-up h1,
+.page--sign-up h2,
+.page--link h1,
+.page--link h2 {
+  color: rgb(0, 0, 97);
+}
+.page--found {
+  background: rgb(214, 220, 255);
+  padding: 1rem;
+}
+.page--found h1,
+.page--found h2 {
+  color: rgb(0, 0, 97);
+}
+
+.form-field {
+  font-size: 19px;
+}
+.form-field label {
+  width: 200px;
+}
+
+.form-field input {
+  border-radius: 10px;
+  padding: 11px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+  font-size: inherit;
+  border: 1px solid lightgray;
+
+  -webkit-appearance: none;
+  box-shadow: inset 0px 0px 0px 0px white;
+}
+.form-field input:hover {
+  outline: none;
+}
+.form-field input:active {
+  outline: none;
 }
